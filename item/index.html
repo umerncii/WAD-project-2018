@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>
+			Items
+		</title>
+		
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css"/>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+	</head>
+
+	<body>
+	
+	<div class="three col-lg-12 col-sm-12 col-xsm-12" >
+	<div class="one col-lg-12 col-sm-12 col-xsm-12" >
+	<div class="container" >
+	<div class="row">
+
+		<span class="col-lg-2 col-sm-2 col-xsm-2" style="font-size:30px;cursor:pointer; color:#ffffcc"  onclick="openNav()">&#9776; Menu</span>
+		<button  onclick="finalBill()"> Total Bill</button>
+	</div>
+	<div id="mySidenav" class="sidenav">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	  <a href="../home/index.html">Home</a>
+	  <a href="index.html">Items</a>
+	  <a href="../contact/index.html">Contact</a>
+	</div>
+	<h2 id="bill" class="four"> 
+	</h2>
+	<!--Tall Coffee-->
+	<h1 class="two"> Tall size Coffee
+	</h1>
+	<div class="row">
+		<div class="col-lg-4 col-sm-4 col-xsm-4"><img src="c1.jpg" href="Cappuccino" width="100%" height="245px"/>
+			<h2 style="color:#ffffcc; text-align:center" onclick="Cappuccino()" class="button"> Tall Cappuccino 
+			
+			<h3 id="Cappuccino" class="hovero">
+			
+			</h3>
+			</h2>
+			<button  onclick="buy1()"> Buy now</button>
+		</div>
+		
+		<div class="col-lg-4 col-sm-4 col-xsm-4"><img src="l1.jpg" href="latte" width="100%" height="245px"/>
+			<h2 style="color:#ffffcc; text-align:center" onclick="Latte()" class="button"> Tall Latte
+			<h3 id="Latte" class="hovero">
+			</h3>
+			</h2>
+			<button  onclick="buy2()"> Buy now</button>
+		</div>
+		
+		<div class="col-lg-4 col-sm-4 col-xsm-4"><img src="a1.jpg" href="Americano" width="100%" height="245px"/>
+			<h2 style="color:#ffffcc; text-align:center" onclick="Americano()" class="button"> Tall Americano 
+			<h3 id="Americano" class="hovero">
+			</h3>
+			</h2>
+			<button  onclick="buy3()"> Buy now</button>
+		</div>
+		
+		<div class="col-lg-4 col-sm-4 col-xsm-4"><img src="e1.jpg" href="Espresso" width="100%" height="245px"/>
+			<h2 style="color:#ffffcc; text-align:center" onclick="Espresso()" class="button"> Tall Espresso 
+			<h3 id="Espresso" class="hovero">
+			</h3>
+			</h2>
+			<button  onclick="buy4()"> Buy now</button>
+		</div>
+		
+		<div class="col-lg-4 col-sm-4 col-xsm-4"><img src="mo1.png" href="Mocha" width="100%" height="245px"/>
+			<h2 style="color:#ffffcc; text-align:center" onclick="Mocha()" class="button"> Tall Mocha 
+			<h3 id="Mocha" class="hovero">
+			</h3>
+			</h2>
+			<button  onclick="buy5()"> Buy now</button>
+		</div>
+		
+		<div class="col-lg-4 col-sm-4 col-xsm-4"><img src="ma1.jpg" href="Macchiato" width="100%" height="245px"/>
+			<h2 style="color:#ffffcc; text-align:center" onclick="Macchiato()" class="button"> Tall Macchiato 
+			<h3 id="Macchiato" class="hovero">
+			</h3>
+			</h2>
+			<button  onclick="buy6()"> Buy now</button>
+		</div>
+		
+	</div>
+	
+	<!--Grand Coffee-->
+	<h1 class="two"> Grand size Coffee
+	</h1>
+	<div class="row">
+		<div class="col-lg-4 col-sm-4 col-xsm-4"><img src="c1.jpg" href="Cappuccino" width="100%" height="245px"/>
+			<h2 style="color:#ffffcc; text-align:center" onclick="GCappuccino()" class="button"> Grand Cappuccino 
+			<h3 id="GCappuccino" class="hovero">
+			</h3>
+			</h2>
+			<button  onclick="buy7()"> Buy now</button>
+		</div>
+		
+		<div class="col-lg-4 col-sm-4 col-xsm-4"><img src="l1.jpg" href="latte" width="100%" height="245px"/>
+			<h2 style="color:#ffffcc; text-align:center" onclick="GLatte()" class="button"> Grand Latte
+			<h3 id="GLatte" class="hovero">
+			</h3>
+			</h2>
+			<button  onclick="buy8()"> Buy now</button>
+		</div>
+		
+		<div class="col-lg-4 col-sm-4 col-xsm-4"><img src="a1.jpg" href="Americano" width="100%" height="245px"/>
+			<h2 style="color:#ffffcc; text-align:center" onclick="GAmericano()" class="button"> Grand Americano 
+			<h3 id="GAmericano" class="hovero">
+			</h3>
+			</h2>
+			<button  onclick="buy9()"> Buy now</button>
+		</div>
+		
+		<div class="col-lg-4 col-sm-4 col-xsm-4"><img src="e1.jpg" href="Espresso" width="100%" height="245px"/>
+			<h2 style="color:#ffffcc; text-align:center" onclick="GEspresso()" class="button"> Grand Espresso 
+			<h3 id="GEspresso" class="hovero">
+			</h3>
+			</h2>
+			<button  onclick="buy10()"> Buy now</button>
+		</div>
+		
+		<div class="col-lg-4 col-sm-4 col-xsm-4"><img src="mo1.png" href="Mocha" width="100%" height="245px"/>
+			<h2 style="color:#ffffcc; text-align:center" onclick="GMocha()" class="button"> Grand Mocha 
+			<h3 id="GMocha" class="hovero">
+			</h3>
+			</h2>
+			<button  onclick="buy11()"> Buy now</button>
+		</div>
+		
+		<div class="col-lg-4 col-sm-4 col-xsm-4"><img src="ma1.jpg" href="Macchiato" width="100%" height="245px"/>
+			<h2 style="color:#ffffcc; text-align:center" onclick="GMacchiato()" class="button"> Grand Macchiato 
+			<h3 id="GMacchiato" class="hovero">
+			</h3>
+			</h2>
+			<button  onclick="buy12()"> Buy now</button>
+		</div>
+		
+	</div>
+	
+	<!--Bakery cake-->
+	<h1 class="two"> Special Bakey
+	</h1>
+	<div class="row">
+		<div class="col-lg-4 col-sm-4 col-xsm-4"><img src="b1.jpg" href="chocolate muffin" width="100%" height="245px"/>
+			<h2 style="color:#ffffcc; text-align:center" onclick="CMuffin()" class="button"> Chocolate Muffin 
+			<h3 id="CMuffin" class="hovero">
+			</h3>
+			</h2>
+			<button  onclick="buy13()"> Buy now</button>
+		</div>
+		
+		<div class="col-lg-4 col-sm-4 col-xsm-4"><img src="b2.jpg" href="plain muffin" width="100%" height="245px"/>
+			<h2 style="color:#ffffcc; text-align:center" onclick="PMuffin()" class="button"> Plain Muffin
+			<h3 id="PMuffin" class="hovero">
+			</h3>
+			</h2>
+			<button  onclick="buy14()"> Buy now</button>
+		</div>
+		
+		<div class="col-lg-4 col-sm-4 col-xsm-4"><img src="b3.jpg" href="stra muffin" width="100%" height="245px"/>
+			<h2 style="color:#ffffcc; text-align:center" onclick="SMuffin()" class="button"> Strawberry Muffin 
+			<h3 id="SMuffin" class="hovero">
+			</h3>
+			</h2>
+			<button  onclick="buy15()"> Buy now</button>
+		</div>	
+<!--Bakery other-->	
+<div class="col-lg-4 col-sm-4 col-xsm-4"><img src="d1.jpg" href="Apple Pie " width="100%" height="245px"/>
+			<h2 style="color:#ffffcc; text-align:center" onclick="Apple()" class="button"> Apple Pie 
+			<h3 id="Apple" class="hovero">
+			</h3>
+			</h2>
+			<button  onclick="buy16()"> Buy now</button>
+		</div>
+		
+		<div class="col-lg-4 col-sm-4 col-xsm-4"><img src="d2.jpeg" href="Crossant" width="100%" height="245px"/>
+			<h2 style="color:#ffffcc; text-align:center" onclick="Crossant()" class="button"> Crossant
+			<h3 id="Crossant" class="hovero">
+			</h3>
+			</h2>
+			<button  onclick="buy17()"> Buy now</button>
+		</div>
+		
+		<div class="col-lg-4 col-sm-4 col-xsm-4"><img src="d3.jpg" href="Bread" width="100%" height="245px"/>
+			<h2 style="color:#ffffcc; text-align:center" onclick="Bread()" class="button"> Bread 
+			<h3 id="Bread" class="hovero">
+			</h3>
+			</h2>
+			<button  onclick="buy18()"> Buy now</button>
+		</div>		
+	</div>
+	<!--Drinks-->	
+	<h1 class="two">Drinks
+	</h1>
+	<div class="row">
+		<div class="col-lg-4 col-sm-4 col-xsm-4"><img src="j1.jpg" href="Coke" width="100%" height="245px"/>
+			<h2 style="color:#ffffcc; text-align:center" onclick="Coke()" class="button"> Coke 
+			<h3 id="Coke" class="hovero">
+			</h3>
+			</h2>
+			<button  onclick="buy19()"> Buy now</button>
+		</div>
+		<div class="col-lg-4 col-sm-4 col-xsm-4"><img src="j2.jpg" href="7up" width="100%" height="245px"/>
+			<h2 style="color:#ffffcc; text-align:center" onclick="Up()" class="button"> 7 up 
+			<h3 id="7up" class="hovero">
+			</h3>
+			</h2>
+			<button  onclick="buy20()"> Buy now</button>
+		</div>
+		<div class="col-lg-4 col-sm-4 col-xsm-4"><img src="j3.jpg" href="Fanta" width="100%" height="245px"/>
+			<h2 style="color:#ffffcc; text-align:center" onclick="Fanta()" class="button"> Fanta
+			<h3 id="Fanta" class="hovero">
+			</h3>
+			</h2>
+			<button  onclick="buy21()"> Buy now</button>
+		</div>
+		<div class="col-lg-4 col-sm-4 col-xsm-4"><img src="j4.jpg" href="DCoke" width="100%" height="245px"/>
+			<h2 style="color:#ffffcc; text-align:center" onclick="DCoke()" class="button"> Diet Coke
+			<h3 id="DCoke" class="hovero">
+			</h3>
+			</h2>
+			<button  onclick="buy22()"> Buy now</button>
+		</div>
+		<div class="col-lg-4 col-sm-4 col-xsm-4"><img src="j5.jpg" href="Evian" width="100%" height="245px"/>
+			<h2 style="color:#ffffcc; text-align:center" onclick="Evian()" class="button"> Evian
+			<h3 id="Evian" class="hovero">
+			</h3>
+			</h2>
+			<button  onclick="buy23()"> Buy now</button>
+		</div>
+	</div>
+	
+	
+	
+	</div>
+	</div>
+	</div>
+	
+	
+	<script>
+	
+	
+		var coffee={
+		
+			"tall":[
+				{"name":"Cappuccino",
+				"price":"€ 3.25",
+				"Size":"300ml",
+				"incredients":["Milk","Coffee beans","Sugar"]
+				},
+				{"name":"Latte",
+				"price":"€ 3.50",
+				"Size":"250ml",
+				"incredients":["Milk","Coffee beans","Sugar","Cream"]
+				},
+				{"name":"Americano",
+				"price":"€ 3.49",
+				"Size":"300ml",
+				"incredients":["Coffee beans","Sugar","water"]
+				},
+				{"name":"Espresso",
+				"price":"€ 2.99",
+				"Size":"250ml",
+				"incredients":["Coffee beans","Sugar","water"]
+				},
+				{"name":"Mocha",
+				"price":"€ 2.99",
+				"Size":"225ml",
+				"incredients":["Coffee beans","Milk"]
+				},
+				{"name":"Macchiato",
+				"price":"€ 2.99",
+				"Size":"225ml",
+				"incredients":["Coffee beans","Milk","Cream"]
+				}
+			],
+			
+			"grand":[
+				{"name":"Cappuccino",
+				"price":"€ 3.75",
+				"Size":"400ml",
+				"incredients":["Milk","Coffee beans","Sugar"]
+				},
+				{"name":"Latte",
+				"price":"€ 3.99",
+				"Size":"350ml",
+				"incredients":["Milk","Coffee beans","Sugar","Cream"]
+				},
+				{"name":"Americano",
+				"price":"€ 3.89",
+				"Size":"375ml",
+				"incredients":["Milk","Coffee beans","Sugar","water"]
+				},
+				{"name":"Espresso",
+				"price":"€ 3.50",
+				"Size":"300ml",
+				"incredients":["Coffee beans","Sugar","water"]
+				},
+				{"name":"Mocha",
+				"price":"€ 3.75",
+				"Size":"300ml",
+				"incredients":["Coffee beans","Milk"]
+				},
+				{"name":"Macchiato",
+				"price":"€ 3.49",
+				"Size":"275ml",
+				"incredients":["Coffee beans","Milk","Cream"]
+				}
+			]
+		
+		}
+		var drinks={
+			"drink":[
+							{"name":"Coke",
+							"size":"330ml",
+							"price":"€ 1.25"
+							},
+							{"name":"7 up",
+							"size":"330ml",
+							"price":"€ 1.25"
+							},
+							{"name":"Fanta",
+							"size":"330ml",
+							"price":"€ 0.99"
+							},
+							{"name":"Diet Coke",
+							"size":"330ml",
+							"price":"€ 0.99"
+							},
+							{"name":"Evian",
+							"size":"750ml",
+							"price":"€ 1.75"							
+							}	
+			
+									
+			]
+		
+		
+		}
+		
+		var bakery={
+					"cake":[
+						{"name":"Chocolate Muffin",
+						"price":"€ 1.60",
+						"incredients":["Chocolate","Egg","Flour"]
+						},
+						{"name":"Plain Muffin",
+						"price":"€ 1.25",
+						"incredients":["Vanilla Essence ","Egg","Flour"]
+						},
+						{"name":"Strawberry Muffin",
+						"price":"€ 1.60",
+						"incredients":["Strawberry Sauce","Egg","Flour"]
+						}
+					],
+					"other":[
+						{"name":"Apple Pie",
+						"price":"€ 1.50",
+						"incredients":["Apple Chunks","Egg","Flour"]
+						},
+						{"name":"Crossant",
+						"price":"€ 0.99",
+						"incredients":["Yeast","Egg","Flour"]
+						},
+						{"name":"Bread",
+						"price":"€ 1.99",
+						"incredients":["Yeast"," Egg"," Flour"]
+						}
+							
+					]
+		
+		}
+		function one(){
+		document.getElementById("two").innerHTML=bakery.cake[0].incredients[1];
+		alert(coffee.tall[0].name);
+		
+		}
+		
+		function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+//Tall Coffee
+function Cappuccino(){
+
+document.getElementById("Cappuccino").innerHTML= "Name: "+coffee.tall[0].name+"<br>"+"Price: "+coffee.tall[0].price+"<br>"+"Size: "+coffee.tall[0].Size+"<br>"+"Incredients: "+coffee.tall[0].incredients;
+}
+function Latte(){
+
+document.getElementById("Latte").innerHTML= "Name: "+coffee.tall[1].name+"<br>"+"Price: "+coffee.tall[1].price+"<br>"+"Size: "+coffee.tall[1].Size+"<br>"+"Incredients: "+coffee.tall[1].incredients;
+}
+function Americano(){
+
+document.getElementById("Americano").innerHTML= "Name: "+coffee.tall[2].name+"<br>"+"Price: "+coffee.tall[2].price+"<br>"+"Size: "+coffee.tall[2].Size+"<br>"+"Incredients: "+coffee.tall[2].incredients;
+}
+function Espresso(){
+
+document.getElementById("Espresso").innerHTML= "Name: "+coffee.tall[3].name+"<br>"+"Price: "+coffee.tall[3].price+"<br>"+"Size: "+coffee.tall[3].Size+"<br>"+"Incredients: "+coffee.tall[3].incredients;
+}
+function Mocha(){
+
+document.getElementById("Mocha").innerHTML= "Name: "+coffee.tall[4].name+"<br>"+"Price: "+coffee.tall[4].price+"<br>"+"Size: "+coffee.tall[4].Size+"<br>"+"Incredients: "+coffee.tall[4].incredients;
+}
+function Macchiato(){
+
+document.getElementById("Macchiato").innerHTML= "Name: "+coffee.tall[5].name+"<br>"+"Price: "+coffee.tall[5].price+"<br>"+"Size: "+coffee.tall[5].Size+"<br>"+"Incredients: "+coffee.tall[5].incredients;
+}
+//Grand Coffee
+	function GCappuccino(){
+
+document.getElementById("GCappuccino").innerHTML= "Name: "+coffee.grand[0].name+"<br>"+"Price: "+coffee.grand[0].price+"<br>"+"Size: "+coffee.grand[0].Size+"<br>"+"Incredients: "+coffee.grand[0].incredients;
+}
+function GLatte(){
+
+document.getElementById("GLatte").innerHTML= "Name: "+coffee.grand[1].name+"<br>"+"Price: "+coffee.grand[1].price+"<br>"+"Size: "+coffee.grand[1].Size+"<br>"+"Incredients: "+coffee.grand[1].incredients;
+}
+function GAmericano(){
+
+document.getElementById("GAmericano").innerHTML= "Name: "+coffee.grand[2].name+"<br>"+"Price: "+coffee.grand[2].price+"<br>"+"Size: "+coffee.grand[2].Size+"<br>"+"Incredients: "+coffee.grand[2].incredients;
+}
+function GEspresso(){
+
+document.getElementById("GEspresso").innerHTML= "Name: "+coffee.grand[3].name+"<br>"+"Price: "+coffee.grand[3].price+"<br>"+"Size: "+coffee.grand[3].Size+"<br>"+"Incredients: "+coffee.grand[3].incredients;
+}
+function GMocha(){
+
+document.getElementById("GMocha").innerHTML= "Name: "+coffee.grand[4].name+"<br>"+"Price: "+coffee.grand[4].price+"<br>"+"Size: "+coffee.grand[4].Size+"<br>"+"Incredients: "+coffee.grand[4].incredients;
+}
+function GMacchiato(){
+
+document.getElementById("GMacchiato").innerHTML= "Name: "+coffee.grand[5].name+"<br>"+"Price: "+coffee.grand[5].price+"<br>"+"Size: "+coffee.grand[5].Size+"<br>"+"Incredients: "+coffee.grand[5].incredients;
+}	
+
+//Bakery cake
+function CMuffin(){
+
+document.getElementById("CMuffin").innerHTML= "Name: "+bakery.cake[0].name+"<br>"+"Price: "+bakery.cake[0].price+"<br>"+"Incredients: "+bakery.cake[0].incredients;
+}
+function PMuffin(){
+
+document.getElementById("PMuffin").innerHTML= "Name: "+bakery.cake[1].name+"<br>"+"Price: "+bakery.cake[1].price+"<br>"+"Incredients: "+bakery.cake[1].incredients;
+}
+function SMuffin(){
+
+document.getElementById("SMuffin").innerHTML= "Name: "+bakery.cake[2].name+"<br>"+"Price: "+bakery.cake[2].price+"<br>"+"Incredients: "+bakery.cake[2].incredients;
+}
+//Bakery other
+function Apple(){
+
+document.getElementById("Apple").innerHTML= "Name: "+bakery.other[0].name+"<br>"+"Price: "+bakery.other[0].price+"<br>"+"Incredients: "+bakery.other[0].incredients;
+}
+function Crossant(){
+
+document.getElementById("Crossant").innerHTML= "Name: "+bakery.other[1].name+"<br>"+"Price: "+bakery.other[1].price+"<br>"+"Incredients: "+bakery.other[1].incredients;
+}
+function Bread(){
+
+document.getElementById("Bread").innerHTML= "Name: "+bakery.other[2].name+"<br>"+"Price: "+bakery.other[2].price+"<br>"+"Incredients: "+bakery.other[2].incredients;
+}
+//Drinks
+function Coke(){
+
+document.getElementById("Coke").innerHTML= "Name: "+drinks.drink[0].name+"<br>"+"Price: "+drinks.drink[0].price+"<br>"+"Size: "+drinks.drink[0].size;
+}
+function Up(){
+
+document.getElementById("7up").innerHTML= "Name: "+drinks.drink[1].name+"<br>"+"Price: "+drinks.drink[1].price+"<br>"+"Size: "+drinks.drink[1].size;
+}
+function Fanta(){
+
+document.getElementById("Fanta").innerHTML= "Name: "+drinks.drink[2].name+"<br>"+"Price: "+drinks.drink[2].price+"<br>"+"Size: "+drinks.drink[2].size;
+}
+function DCoke(){
+
+document.getElementById("DCoke").innerHTML= "Name: "+drinks.drink[3].name+"<br>"+"Price: "+drinks.drink[3].price+"<br>"+"Size: "+drinks.drink[3].size;
+}
+function Evian(){
+
+document.getElementById("Evian").innerHTML= "Name: "+drinks.drink[4].name+"<br>"+"Price: "+drinks.drink[4].price+"<br>"+"Size: "+drinks.drink[4].size;
+}
+	</script>
+	<script>
+			ans1=0;
+			ans2=0;
+			ans4=0;
+			ans3=0;
+			ans5=0;
+			ans6=0;
+			ans7=0;
+			ans8=0;
+			ans9=0;
+			ans10=0;
+			ans11=0;
+			ans12=0;
+			ans13=0;
+			ans14=0;
+			ans15=0;
+			ans16=0;
+			ans17=0;
+			ans18=0;
+			ans19=0;
+			ans20=0;
+			ans21=0;
+			ans22=0;
+			ans23=0;
+			ans24=0;
+			//Buy now 
+			function buy1(){
+			cap1=parseInt(prompt("How many Cups of Tall Cappuccino you want?"));
+			
+			
+			if (ans1=cap1*3.25){
+			alert("Bill for your Cappuccino is € " + ans1);
+			}
+			else{
+			alert("INVALID INPUT")
+			}
+			
+			}
+			function buy7(){
+			cap2=parseInt(prompt("How many Cups of Grand Cappuccino you want?"));
+			
+			
+			if (ans7=cap2*3.75){
+			alert("Bill for your Cappuccino is € " + ans7);
+			}
+			else{
+			alert("INVALID INPUT")
+			}
+			
+			}
+			function buy2(){
+			lat1=parseInt(prompt("How many Cups of Tall Latte you want?"));
+			
+			
+			if (ans2=lat1*3.50){
+			alert("Bill for your Latte is € " + ans2);
+			}
+			else{
+			alert("INVALID INPUT")
+			}
+			}
+			function buy8(){
+			lat2=parseInt(prompt("How many Cups of Grand Latte you want?"));
+			
+			
+			if (ans8=lat2*3.99){
+			alert("Bill for your Latte is € " + ans8);
+			}
+			else{
+			alert("INVALID INPUT")
+			}
+			}
+			
+			function buy3(){
+			am1=parseInt(prompt("How many Cups of Tall Americano you want?"));
+			
+			
+			if (ans3=am1*3.49){
+			alert("Bill for your Americano is € " + ans3);
+			}
+			else{
+			alert("INVALID INPUT")
+			}
+			}
+			function buy9(){
+			am2=parseInt(prompt("How many Cups of Grand Americano you want?"));
+			
+			
+			if (ans9=am2*3.89){
+			alert("Bill for your Americano is € " + ans9);
+			}
+			else{
+			alert("INVALID INPUT")
+			}
+			}
+			
+			function buy4(){
+			as1=parseInt(prompt("How many Cups of Tall Espresso you want?"));
+			
+			
+			if (ans4=as1*2.99){
+			alert("Bill for your Espresso is € " + ans4);
+			}
+			else{
+			alert("INVALID INPUT")
+			}
+			}	
+			function buy10(){
+			as2=parseInt(prompt("How many Cups of Grand Espresso you want?"));
+			
+			
+			if (ans10=as2*3.50){
+			alert("Bill for your Espresso is € " + ans10);
+			}
+			else{
+			alert("INVALID INPUT")
+			}
+			}
+			function buy5(){
+			mo1=parseInt(prompt("How many Cups of Tall Mocha you want?"));
+			
+			
+			if (ans5=mo1*2.99){
+			alert("Bill for your Mocha is € " + ans5);
+			}
+			else{
+			alert("INVALID INPUT")
+			}
+			}
+			function buy11(){
+			mo2=parseInt(prompt("How many Cups of Grand Mocha you want?"));
+			
+			
+			if (ans11=mo2*3.75){
+			alert("Bill for your Mocha is € " + ans11);
+			}
+			else{
+			alert("INVALID INPUT")
+			}
+			}
+			
+			function buy6(){
+			ma1=parseInt(prompt("How many Cups of Tall Macchiato you want?"));
+			
+			
+			if (ans6=ma1*2.99){
+			alert("Bill for your Macchiato is € " + ans6);
+			}
+			else{
+			alert("INVALID INPUT")
+			}
+			}
+			function buy12(){
+			ma2=parseInt(prompt("How many Cups of Grand Macchiato you want?"));
+			
+			
+			if (ans12=ma2*3.49){
+			alert("Bill for your Macchiato is € " + ans12);
+			}
+			else{
+			alert("INVALID INPUT")
+			}
+			}
+			
+			function buy13(){
+			cm=parseInt(prompt("How many Chocolate Muffin you want?"));
+			
+			
+			if (ans13=cm*1.60){
+			alert("Bill for your Chocolate Muffin is € " + ans13);
+			}
+			else{
+			alert("INVALID INPUT")
+			}
+			}
+			
+			function buy14(){
+			pm=parseInt(prompt("How many Plain Muffin you want?"));
+			
+			
+			if (ans14=pm*1.60){
+			alert("Bill for your Plain Muffin is € " + ans14);
+			}
+			else{
+			alert("INVALID INPUT")
+			}
+			}
+			
+			function buy15(){
+			sm=parseInt(prompt("How many Strawberry Muffin you want?"));
+			
+			
+			if (ans15=sm*1.60){
+			alert("Bill for your Strawberry Muffin is € " + ans15);
+			}
+			else{
+			alert("INVALID INPUT")
+			}
+			}
+			
+			function buy16(){
+			ap=parseInt(prompt("How many Apple Pie you want?"));
+			
+			
+			if (ans16=ap*1.50){
+			alert("Bill for your Apple Pie is € " + ans16);
+			}
+			else{
+			alert("INVALID INPUT")
+			}
+			}
+			
+			function buy17(){
+			cr=parseInt(prompt("How many Crossant you want?"));
+			
+			
+			if (ans17=cr*0.99){
+			alert("Bill for your Crossant is € " + ans17);
+			}
+			else{
+			alert("INVALID INPUT")
+			}
+			}
+			
+			function buy18(){
+			br=parseInt(prompt("How many Bread you want?"));
+			
+			
+			if (ans18=br*1.99){
+			alert("Bill for your Bread is € " + ans18);
+			}
+			else{
+			alert("INVALID INPUT")
+			}
+			}
+			
+			function buy19(){
+			co=parseInt(prompt("How many Coke Cans you want?"));
+			
+			
+			if (ans19=co*0.99){
+			alert("Bill for your Coke Cans is € " + ans19);
+			}
+			else{
+			alert("INVALID INPUT")
+			}
+			}
+			
+			function buy20(){
+			up=parseInt(prompt("How many 7UP Cans you want?"));
+			
+			
+			if (ans20=up*0.99){
+			alert("Bill for your 7UP Cans is € " + ans20);
+			}
+			else{
+			alert("INVALID INPUT")
+			}
+			}
+			
+			function buy21(){
+			fa=parseInt(prompt("How many Fanta Cans you want?"));
+			
+			
+			if (ans21=fa*0.99){
+			alert("Bill for your Fanta Cans is € " + ans21);
+			}
+			else{
+			alert("INVALID INPUT")
+			}
+			}
+			
+			function buy22(){
+			dc=parseInt(prompt("How many Diet Coke Cans you want?"));
+			
+			
+			if (ans22=dc*0.99){
+			alert("Bill for your Diet Coke Cans is € " + ans22);
+			}
+			else{
+			alert("INVALID INPUT")
+			}
+			}
+			
+			function buy23(){
+			ev=parseInt(prompt("How many bottles of Evian you want?"));
+			
+			
+			if (ans23=ev*1.75){
+			alert("Bill for your Evian is € " + ans23);
+			}
+			else{
+			alert("INVALID INPUT")
+			}
+			}
+			function finalBill(){
+			ans24=parseFloat(Math.round (ans1 + ans2+ ans3 +ans4 + ans5 +ans6+ ans7+ans8 + ans9+ ans10 + ans11 +ans12+ ans13+ans14 + ans15+ ans16 + ans17 +ans18+ ans19+ans20 + ans21+ ans22 + ans23)).toFixed(2);
+			document.getElementById("bill").innerHTML=" Your Total Bill is:- € " + ans24;
+			
+			
+			}
+			</script>
+	
+	</body>
+</html>

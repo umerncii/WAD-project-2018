@@ -1,0 +1,90 @@
+.one{
+	background-image: url("a1.jpg");
+	 background-repeat: no-repeat;
+	  background-size: 100% 100%;
+	  margin:0 auto;
+	  
+}
+
+
+      #map {
+        height: 60%;
+		
+      }
+
+     
+
+.two{
+	background-color:#804000;
+	 background-repeat: no-repeat;
+	 
+	 width:1066px;
+	  background-size: 100% 100%;
+	margin:0 auto;
+}
+.to{
+	font-style: italic;
+	color:#ffffff;
+}
+.button:hover {
+    background-color: #555555;
+}
+.button1:hover {
+    background-color: #a3a375;
+}
+
+.three{
+	text-align:center;
+	font-size:75px;
+	color:#ffffff;
+	font-family:"Courier New", Courier, monospace;
+	text-decoration:underline;
+	margin:0 auto;
+
+}
+.php{
+	text-align:center;
+	font-size:45px;
+	color:#ffffff;
+	font-family:"Courier New", Courier, monospace;
+	margin:0 auto;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #804000;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
