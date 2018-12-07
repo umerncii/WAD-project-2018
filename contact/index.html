@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title> Contact
+		</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css"/>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+	
+	<meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    
+   
+	
+	</head>
+	
+		<body>
+		
+		<div class="one col-lg-12 col-sm-12 col-xsm-12">
+			<div class="container">
+				<div class="two col-lg-12 col-sm-12 col-xsm-12">
+				
+					<span class="col-lg-2 col-sm-2 col-xsm-2" style="font-size:30px;cursor:pointer; color:#ffffcc"  onclick="openNav()">&#9776; Menu</span>
+						<div id="mySidenav" class="sidenav">
+				  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				  <a href="../home/index.html">Home</a>
+				  <a href="../item/index.html">Items</a>
+				  <a href="index.html">Contact</a>
+				</div>
+				
+				<h1 class="three">
+					We are happy to help you
+				</h1>
+				
+				<div class="row">
+					<div class="col-lg-6 col-sm-6 col-xsm-6">
+						<h2 class="php"> Please provide us all your details along with your Queries.
+						We will get back to you as early as we can.
+
+						</h2>
+						<h2 class="three"><b>Location Of Our Shop</b></h2>
+						  <div id="map"></div>
+						<script>
+
+      function initMap() {
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 11,
+          center: {lat: 53.350140, lng: -6.266155}
+        });
+
+        // Create an array of alphabetical characters used to label the markers.
+        var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+
+        // Add some markers to the map.
+        // Note: The code uses the JavaScript Array.prototype.map() method to
+        // create an array of markers based on a given "locations" array.
+        // The map() method here has nothing to do with the Google Maps API.
+        var markers = locations.map(function(location, i) {
+          return new google.maps.Marker({
+            position: location,
+            label: labels[i % labels.length]
+          });
+        });
+
+        // Add a marker clusterer to manage the markers.
+        var markerCluster = new MarkerClusterer(map, markers,
+            {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
+      }
+      var locations = [
+        
+        {lat: 53.348873, lng: -6.243169},
+        {lat: 53.289056, lng: -6.243390}, 
+        
+      ]
+    </script>
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7zNEt23CKPUWiptnydkHbf6n_RmXvqnU&callback=initMap">
+    </script>
+					</div>
+					<!--PHP-->
+					<div class="col-lg-6 col-sm-6 col-xsm-6">
+						<h2 class="three"><b>Contact Us</b></h2>
+						<form action="contact.php" method="post"> 
+						<label class="php" id="first"> Name:</label><br/>
+						<input type="text" name="name"><br/>
+
+						<label class="php" id="first">Phone Number:</label><br/>
+						<input type="salary" name="phNo"><br/>
+
+						<label class="php" id="first">Email:</label><br/>
+						<input type="text" name="email"><br/>
+						
+						<label class="php" id="first">Query:</label><br/>
+						<input type="text" name="query"><br/>
+						<br>
+						<button type="submit" name="save">Submit</button>
+						
+						<h2 class="three"> <b>UPDATE</b></h2>
+						<h2 class="to"> To update your information you need to provied your OLD NAME</h2>
+						<form action="contact.php" method="post">
+						
+						<label class="php" id="first"> Old Name:</label><br/>
+						<input type="text" name="name3"><br/>
+						
+						<label class="php" id="first"> Name:</label><br/>
+						<input type="text" name="name2"><br/>
+
+						<label class="php" id="first">Phone Number:</label><br/>
+						<input type="salary" name="phNo2"><br/>
+
+						<label class="php" id="first">Email:</label><br/>
+						<input type="text" name="email2"><br/>
+						
+						<label class="php" id="first">Query:</label><br/>
+						<input type="text" name="query2"><br/>
+
+						<br>
+						<button type="submit" name="update">Update</button>
+						
+						
+						
+					</div>
+					
+					
+				</div>
+				<h2 class="three button" onclick="address1()">City Shop Address</h2>
+				<h3 id="add1" class="php button1" style="color:#ffffcc">
+				</h3>
+				
+				<h2 class="three button" onclick="address2()">Dundrum Shop Address</h2>
+				<h3 id="add2" class="php button1" style="color:#ffffcc">
+				</h3>
+				
+				
+				<script>
+					function address1(){
+						document.getElementById("add1").innerHTML="Mayor Street Lower <br>" +"Near: International Financial Services Centre"+ "<br>"+"Dublin 1";
+					}
+				</script>
+				
+				<script>
+					function address2(){
+						document.getElementById("add2").innerHTML="Dundrum Town Centre,<br>"+" 16 Sandyford Rd, Dundrum,<br>"+" Dublin";
+					}
+				</script>
+				
+				
+				<h1 class="three">
+					THANKS FOR YOUR VISIT ☕
+				</h1>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	<script>
+	function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+	
+	
+	</script>
+		</body>
+	
+</html>
